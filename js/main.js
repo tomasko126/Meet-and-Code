@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
         this.modalHeader.find('.event-name').text(event.find('.event-name').text());
         this.modalHeader.find('.event-date').text(event.find('.event-date').text());
         this.modal.attr('data-event', event.parent().attr('data-event'));
-        this.modalBody.find('.event-info').load(event.parent().attr('data-content') + '.html .event-info > *', function(data) {
+        this.modalBody.find('.event-info').load("html/" + event.parent().attr('data-content') + '.html .event-info > *', function(data) {
             self.element.addClass('content-loaded');
         });
         this.element.addClass('modal-is-open');

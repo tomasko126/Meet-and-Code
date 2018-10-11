@@ -13,25 +13,45 @@ header {
     text-transform: uppercase;
 }
 
-footer {
-    width: 100%;
-    height: 50px;
-    background-color: black;
+a {
+    text-decoration: none;
     color: white;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer > p {
-    margin: 0;
 }
 
 h3 {
     font-size: 40px;
     text-align: center;
-    margin: 1.5em;
+    margin: 1em;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #38006bbf;
+    padding: 30px 20px;
+    justify-content: center;
+}
+
+#heroimage {
+    width: 300px;
+}
+
+#herotext {
+    font-size: 30px;
+    color: #f5f5f5c9;
+    margin-top: 5px;
+}
+
+#firsttext {
+    margin: 15px 0;
+    font-size: larger;
+    font-weight: 900;
+}
+
+#secondtext {
+    font-size: smaller;
+    font-weight: lighter;
 }
 
 #time {
@@ -44,32 +64,6 @@ h3 {
     top: 0px;
     z-index: 2;
     border-radius: 5px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-nav, .navbar-brand {
-    font-size: 25px;
-}
-
-#navcontainer {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-}
-
-#images {
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-#images > a > img {
-    margin: 2em;
 }
 
 #intro > a {
@@ -86,36 +80,42 @@ nav, .navbar-brand {
     margin-left: 20px;
 }
 
-#hero {
+#images {
     display: flex;
+    flex-flow: wrap;
     align-items: center;
-    flex-wrap: wrap;
-    background-color: #38006bbf;
-    padding: 30px 20px;
+    justify-content: space-evenly;
+}
+
+#images > a > img {
+    margin: 1em 2em;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#heroimage {
-    width: 350px;
-    margin-right: 60px;
-}
-
-#herotext {
-    font-size: 30px;
-    padding-left: 16px;
-    color: #f5f5f5c9;
-    left: 25px;
-    margin-top: 13px;
+footer > p {
+    margin: 0;
 }
 
 @media only screen and (max-width: 1100px) {
     #hero {
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: initial;
         flex-direction: column;
     }
 }
 
-.odd {
-    background-color: whitesmoke;
+@media only screen and (min-width: 1100px) {
+    #herotext {
+        margin-left: 40px;
+    }
 }
