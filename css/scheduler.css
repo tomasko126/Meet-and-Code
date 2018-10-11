@@ -360,6 +360,15 @@ a {
     z-index: 20;
 }
 
+.cd-schedule .single-event[data-event=event-10],.cd-schedule [data-event=event-10] .header-bg {
+    background: #ba68c8;
+}
+
+.cd-schedule .single-event[data-event=event-10]:hover {
+    background: #ce93d8;
+    z-index: 20;
+}
+
 .cd-schedule .event-modal {
     position: fixed;
     z-index: 3;
