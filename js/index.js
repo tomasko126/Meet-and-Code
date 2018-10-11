@@ -24,3 +24,13 @@ setTimemarker();
 setInterval(() => {
     setTimemarker();
 }, 60 * 1000);
+
+// Disable scrolling after clicking on an event
+$(".single-event").click(() => {
+    $("body").css("overflow", "hidden");
+});
+
+// Enable body-scrolling after clicking on close button
+$(".close").click(() => {
+    $("body").css("overflow", "auto");
+});
