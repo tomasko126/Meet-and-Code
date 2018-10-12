@@ -164,6 +164,9 @@ jQuery(document).ready(function($) {
                 event.removeClass('selected-event');
             });
         } else {
+            if (!event.offset()) {
+                return;
+            }
             var eventTop = event.offset().top - $(window).scrollTop()
               , eventLeft = event.offset().left
               , eventHeight = event.innerHeight()
